@@ -16,7 +16,8 @@
     "prisma:generate": "cd backend && npx prisma generate",
     "prisma:migrate": "cd backend && npx prisma migrate dev --name init",
     "prisma:setup": "yarn prisma:generate && yarn prisma:migrate",
-    "prisma:reset": "cd backend && npx prisma db push --force-reset"
+    "prisma:reset": "cd backend && npx prisma db push --force-reset",
+    "preinstall": "node preinstall.js"
   },
   "private": false
 }
